@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wechat/wechat",
+    "pages/note/note",
+    "pages/find/find",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "仿微信",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "selectedColor":"red",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"image/wechat.png",
+      "selectedIconPath":"image/wechat.png",
+      "text": "微信"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "iconPath":"image/note.png",
+      "selectedIconPath":"image/note.png",
+      "text": "通讯录"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "iconPath":"image/find.png",
+      "selectedIconPath":"image/find.png",
+      "text": "发现"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "iconPath":"image/mine.png",
+      "selectedIconPath":"image/mine.png",
+      "text": "我"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
