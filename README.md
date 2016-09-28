@@ -16,3 +16,10 @@ weApp for wechat
 <br/>
 欢迎一起学习交流
 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=9bcf9f7be59b471456c1feec466dab4d54da7ab35c834b8e821ec17177fb33b3"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="前端群居所" title="前端群居所"></a>
+
+
+###关于使用：
+> 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录
+
+###相关资源：
+[weapp-ide-crack](https://github.com/gavinkwoe/weapp-ide-crack/blob/master/README.md) - 微信小应用资源破解
