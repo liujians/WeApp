@@ -5,6 +5,7 @@ Page({
   data: {
     motto: '这是仿微信的主页面，研发中...',
     userInfo: {}
+    
   },
   //事件处理函数
   bindViewTap: function() {

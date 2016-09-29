@@ -1,1 +1,47 @@
-Page({})
+var app = getApp()
+Page({
+    data:{
+      list:[
+        {
+            img:"../../image/adam.jpg",
+            name:"王浩",
+            message:"哈哈",
+            time:"22:00",
+            count:1
+        },
+        {
+            img:"../../image/ben.png",
+            name:"成凤杰",
+            message:"干什么呢",
+            time:"17:30",
+            count:0
+        },
+        {
+            img:"../../image/max.png",
+            name:"梁雨",
+            message:"O(∩_∩)O",
+            time:"16:00",
+            count:0
+        },
+        {
+            img:"../../image/mike.png",
+            name:"廖芳樱",
+            message:"那先不管了",
+            time:"14:00",
+            count:14
+        },
+        {
+            img:"../../image/perry.png",
+            name:"邓福滨",
+            message:"可以",
+            time:"10:00",
+            count:7
+        }
+    ]
+    },
+    goPage:function(){
+        wx.navigateTo({
+            url: '../message/message?id=1'
+        })
+    }
+})

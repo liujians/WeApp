@@ -1,0 +1,6 @@
+<scroll-view scroll-y="true" style="height:90%;background:#eee">
+    {{text}}
+</scroll-view>
+<view style="height:10%;background:blue">
+    
+</view>
