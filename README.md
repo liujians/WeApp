@@ -22,7 +22,7 @@ weApp for wechat
 3. 相关小应用API的使用(例：音乐、相册、视频)
 
 ###项目展示：
-<img src="Gif.gif" />
+<iframe height=700 width=600 src="Gif.gif">
 
 ###关于使用：
 > 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录
