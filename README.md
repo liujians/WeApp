@@ -22,7 +22,7 @@ weApp for wechat
 3. 相关小应用API的使用(例：音乐、相册、视频)
 
 ###项目展示：
-![image](blob/master/GIF.gif)
+![image](https://github.com/18380435477/WeApp/blob/master/GIF.gif)
 
 ###关于使用：
 > 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录
