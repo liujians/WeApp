@@ -21,6 +21,10 @@ weApp for wechat
 2. 聊天列表，查看对话内容
 3. 相关小应用API的使用(例：音乐、相册、视频)
 
+###项目历程：
+- 9月29日——初步架构搭建完成，四个tab页，一张效果图
+- 9月30日——加入聊天界面，聊天界面基本数据，聊天头像绑定，新效果图
+
 ###项目展示：
 ![image](https://github.com/liujians/WeApp/blob/master/GIF.gif)
 ![image](https://github.com/liujians/WeApp/blob/master/GIF_2.gif)
