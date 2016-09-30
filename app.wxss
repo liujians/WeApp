@@ -24,6 +24,14 @@
   display: flex;
   flex-direction: column
 }
+.flex-column{
+  display: flex;
+  flex-direction: column
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
 .flex{
   display: flex;
 }
@@ -87,5 +95,7 @@
   position: absolute;
   right: 20rpx;
 }
-
+.clearfix{
+  overflow: hidden;
+}
 

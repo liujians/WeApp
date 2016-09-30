@@ -19,7 +19,7 @@ Page({
                 list_tool:[
                     {
                         img:"../../image/money.png",
-                        name:"钱包"
+                        name:"钱包(现在是播放器)"
                     },
                     {
                         img:"../../image/card.png",
@@ -40,6 +40,12 @@ Page({
                 ]
             },
         ]
+    },
+    goPage:function(event){
+        console.log(event.currentTarget.dataset.log);
+        wx.navigateTo({
+            url: '../audio/audio'
+        })
     },
     onLoad: function () {
         // wx.showNavigationBarLoading();

@@ -1,5 +1,20 @@
 <scroll-view scroll-y="true" style="height:90%;background:#eee">
-    {{text}}
+    <view wx:for="{{message}}" wx:for-item="i">
+        <view class="padding clearfix" wx:if="{{i.me}}">
+            <image class="right-Avatar padding_half" src="{{userInfo.avatarUrl}}"></image>
+            <view class="right-Triangle"></view>
+            <view class="right-message padding_half">
+                <text>{{i.text}}</text>
+            </view>
+        </view>
+        <view class="padding clearfix" wx:if="{{!i.me}}">
+            <image class="left-Avatar padding_half" src="{{i.img}}"></image>
+            <view class="left-Triangle"></view>
+            <view class="left-message padding_half">
+                <text>{{i.text}}</text>
+            </view>
+        </view>
+    </view>
 </scroll-view>
 <view style="height:10%;background:blue">
     

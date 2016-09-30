@@ -1,5 +1,5 @@
 <scroll-view scroll-y="true">
-  <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" bindtap="goPage">
+  <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage">
       <view class="marks" wx:if="{{i.count}}">
         <text>{{i.count}}</text>
       </view>
