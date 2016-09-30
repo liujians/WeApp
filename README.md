@@ -23,6 +23,7 @@ weApp for wechat
 
 ###项目展示：
 ![image](https://github.com/liujians/WeApp/blob/master/GIF.gif)
+![image](https://github.com/liujians/WeApp/blob/master/GIF_2.gif)
 
 ###关于使用：
 > 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录
