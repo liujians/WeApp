@@ -1,8 +1,8 @@
-<modal title="" confirm-text="" no-cancel="true" hidden="{{modalHidden}}" bindconfirm="modalChange">
+<!--<modal title="" confirm-text="" no-cancel="true" hidden="{{modalHidden}}" bindconfirm="modalChange">
   <button>标记未读</button>
   <button>取消关注</button>
   <button>删除该聊天</button>
-</modal>
+</modal>-->
 <scroll-view scroll-y="true">
   <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage" bindlongtap="modalTap">
       <view class="marks" wx:if="{{i.count}}">

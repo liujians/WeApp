@@ -33,11 +33,10 @@ weApp for wechat
 ###项目历程：
 - 9月29日——初步架构搭建完成，四个tab页，一张效果图
 - 9月30日——加入聊天界面，聊天界面基本数据，聊天头像绑定，新效果图
-- 10月08日——将好友列表，消息记录数据存入server中，从server请求数据，为了方便没有用数据库，只是临时写了JSON，用作示例wx.request请求数据(分为一个get请求,一个post请求)。server 部分为单独一个项目，需要下载跑起来才能运行此项目
+- 10月08日——项目分离（详情查看server项目），消息界面美化，消息面板菜单，加入图片选择功能
 
 ###项目展示：
 ![image](https://github.com/liujians/WeApp/blob/master/GIF.gif)
-![image](https://github.com/liujians/WeApp/blob/master/GIF_2.gif)
 
 ###关于使用：
 > 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录
