@@ -2,10 +2,21 @@ var app = getApp()
 var util = require('../../utils/util.js')
 Page({
     data:{
-      list:null
+      list:null,
+      modalHidden:true
     },
     onReady:function(){
         util.getUser(this);
+    },
+    modalTap: function(e) {
+        this.setData({
+            modalHidden: false
+        })
+    },
+    modalChange:function(e){
+        this.setData({
+            modalHidden: true
+        })
     },
     goPage:function(event){
         // console.log(event.currentTarget.dataset.name)

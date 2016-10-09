@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import '//cdn.bootcss.com/weui/1.0.1/style/weui.css';
+@import '//cdn.bootcss.com/ionic/1.3.1/css/ionic.min.css';
 .container {
   height: 100%;
   display: flex;
@@ -23,6 +25,10 @@
 .item-avatar .text_box,.item-avatar-lg .text_box{
   display: flex;
   flex-direction: column
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
 }
 .flex-column{
   display: flex;
@@ -98,4 +104,6 @@
 .clearfix{
   overflow: hidden;
 }
-
+.icon::before{
+  font-size: 70rpx
+}

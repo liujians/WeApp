@@ -1,10 +1,11 @@
-<scroll-view scroll-y="true" style="height:90%;background:#eee">
+<scroll-view scroll-y="true" scroll-top="100000000000000000" style="height:90%;background:#eee" animation="{{animation_2}}">
     <view wx:for="{{message}}" wx:for-item="i">
         <view class="padding clearfix" wx:if="{{i.me}}">
             <image class="right-Avatar padding_half" src="{{userInfo.avatarUrl}}"></image>
             <view class="right-Triangle"></view>
             <view class="right-message padding_half">
-                <text>{{i.text}}</text>
+                <text wx:if="{{i.text}}">{{i.text}}</text>
+                <image wx:if="{{i.imgList}}" style="max-width:150px;max-height:120px" src="{{i.imgList}}"></image>
             </view>
         </view>
         <view class="padding clearfix" wx:if="{{!i.me}}">
@@ -15,7 +16,23 @@
             </view>
         </view>
     </view>
+    <view class="weui-icon_success"></view>
 </scroll-view>
-<view style="height:10%;background:blue">
-    
+<view class="row" style="height:10%;">
+    <text class="col-10 text-center icon ion-ios-mic"></text>
+    <view class="col-67 padding_half">
+        <input placeholder="请输入消息" />
+    </view>
+    <view class="col-10 text-center icon ion-happy-outline"></view>
+    <view class="col-10 text-center icon ion-ios-plus-outline" bindtap="elseBtn"></view>
+</view>
+<view id="elsePanel" animation="{{animation}}">
+    <view class="weui-grids">
+        <view class="weui-grid" bindtap="chooseImg"><view class="weui-grid__icon">图片</view></view>
+        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+    </view>
 </view>

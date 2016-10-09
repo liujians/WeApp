@@ -1,5 +1,10 @@
+<modal title="" confirm-text="" no-cancel="true" hidden="{{modalHidden}}" bindconfirm="modalChange">
+  <button>标记未读</button>
+  <button>取消关注</button>
+  <button>删除该聊天</button>
+</modal>
 <scroll-view scroll-y="true">
-  <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage">
+  <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage" bindlongtap="modalTap">
       <view class="marks" wx:if="{{i.count}}">
         <text>{{i.count}}</text>
       </view>
@@ -18,4 +23,15 @@
         <text class="message">{{i.time}}</text>
       </view>
   </view>
+  <!--<view class="weui-grids">
+    <view class="weui-grid"><view class="weui-btn weui-btn_primary">1111</view></view>
+    <view class="weui-grid"><view class="weui-grid_label">1</view></view>
+    <view class="weui-grid"><view class="weui-grid_label">1</view></view>
+  </view>-->
+  <!--<view class="list list-inset">
+    <view class="item item-input">
+      <text class="icon ion-search placeholder-icon"></text>
+      <input placeholder="Search" />
+    </view>
+  </view>-->
 </scroll-view>
