@@ -1,3 +1,4 @@
+var app = getApp()
 function formatTime(date) {
   var year = date.getFullYear()
   var month = date.getMonth() + 1
@@ -11,103 +12,41 @@ function formatTime(date) {
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 function getMessage(id,obj){
-    switch(id){
-      case "1":
-      obj.setData({
-        message:[
-          {
-            img:"../../image/adam.jpg",
-            text:"你好",
-            me:false
-          },
-          {
-            img:"../../image/adam.jpg",
-            text:"哈哈",
-            me:true
-          }
-        ]
-      })
-      break;
-      case "2":
-      obj.setData({
-        message:[
-          {
-            img:"../../image/ben.png",
-            text:"干什么呢",
-            me:false
-          },
-          {
-            img:"../../image/ben.png",
-            text:"干什么呢",
-            me:false
-          },
-          {
-            img:"../../image/ben.png",
-            text:"干什么呢",
-            me:false
-          }
-        ]
-      })
-      break;
-      case "3":
-      obj.setData({
-        message:[
-          {
-            img:"../../image/ben.png",
-            text:"hi",
-            me:false
-          },
-          {
-            img:"../../image/ben.png",
-            text:"hi",
-            me:true
-          },
-          {
-            img:"../../image/max.png",
-            text:"O(∩_∩)O",
-            me:false
-          }
-        ]
-      })
-      break;
-      case "4":
-      obj.setData({
-        message:[
-          {
-            img:"../../image/mike.png",
-            text:"搞好了吗",
-            me:false
-          },
-          {
-            img:"../../image/mike.png",
-            text:"没有",
-            me:true
-          },
-          {
-            img:"../../image/mike.png",
-            text:"那先不管了",
-            me:false
-          }
-        ]
-      })
-      break;
-      case "5":
-      obj.setData({
-        message:[
-          {
-            img:"../../image/perry.png",
-            text:"请我吃饭",
-            me:true
-          },
-          {
-            img:"../../image/perry.png",
-            text:"可以",
-            me:false
-          }
-        ]
-      })
-      break;
-    };
+    wx.request({
+            url: app.globalData.ip+'/getMsg.php',
+            data: {
+              id:id
+            },
+            method: "POST",
+            header: {
+                // 'Content-Type': 'application/json'
+            },
+            success: function(res) {
+                obj.setData({
+                  message:res.data
+              })
+            },
+            fail:function(err){
+            console.log(err);
+            }
+        })
+}
+function getUser(obj){
+   wx.request({
+            url: app.globalData.ip+'/getUser.php',
+            data: {},
+            header: {
+                'Content-Type': 'application/json'
+            },
+            success: function(res) {
+                obj.setData({
+                    list:res.data
+                })
+            },
+            fail:function(err){
+            console.log(err);
+            }
+        })
 }
 function formatNumber(n) {
   n = n.toString()
@@ -116,5 +55,6 @@ function formatNumber(n) {
 
 module.exports = {
   formatTime: formatTime,
-  getMessage: getMessage
+  getMessage: getMessage,
+  getUser: getUser
 }

@@ -25,6 +25,7 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    ip:"http://"+"192.168.1.104"+":8999"
   }
 })

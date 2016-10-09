@@ -1,6 +1,5 @@
 {
   "pages": [   
-    
     "pages/wechat/wechat",
     "pages/note/note",
     "pages/find/find",
