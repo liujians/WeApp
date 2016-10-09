@@ -12,6 +12,7 @@ weApp for wechat
 > [https://github.com/liujians/WeApp-server](https://github.com/liujians/WeApp-server)
 
 跑起服务器之后，在app.js中设置自己的Ip地址
+<br/>
 ![image](https://github.com/liujians/WeApp/blob/master/ipconfig.png)
 ###作者声明：
 基于微信小程序开发的**仿微信demo**
