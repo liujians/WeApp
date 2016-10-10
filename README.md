@@ -27,14 +27,15 @@ weApp for wechat
 > [https://github.com/liujians/WeApp](https://github.com/liujians/WeApp)
 
 ###项目目标：
-1. 界面相似度要高
+1. 界面相似度要高（练习它的布局）
 2. 聊天列表，查看对话内容
 3. 相关小应用API的使用(例：音乐、相册、视频)
 
 ###项目历程：
 - 9月29日——初步架构搭建完成，四个tab页，一张效果图
 - 9月30日——加入聊天界面，聊天界面基本数据，聊天头像绑定，新效果图
-- 10月08日——项目分离（详情查看server项目），消息界面美化，消息面板菜单，加入图片选择功能
+- 10月09日——项目分离（详情查看server项目），消息界面美化，消息面板菜单，加入图片选择功能
+- 10月10日——新加入朋友圈模块布局
 
 ###项目展示：
 ![image](https://github.com/liujians/WeApp/blob/master/GIF.gif)

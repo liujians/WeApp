@@ -18,11 +18,8 @@ Page({
       title:options.name
     })
     
-    app.getUserInfo(function(userInfo){
-    //更新数据
-        _self.setData({
-           userInfo:userInfo
-        })
+    _self.setData({
+        userInfo:app.globalData.userInfo
     })
   },
   onReady:function(){

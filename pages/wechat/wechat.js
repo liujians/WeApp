@@ -1,5 +1,6 @@
 var app = getApp()
 var util = require('../../utils/util.js')
+app.getUserInfo();
 Page({
     data:{
       list:null,

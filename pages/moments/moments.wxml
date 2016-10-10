@@ -1,0 +1,37 @@
+<scroll-view scroll-y="true" style="height:100%;">
+    <view class="bigImg">
+        <view class="userAva">
+            <text class="userName">{{userInfo.nickName}}</text>
+            <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+    </view>
+    <view class="moments_content padding">
+        <view class="row borderBot">
+            <view class="col-20">
+                <image class="otherAva" src="/image/adam.jpg"></image>
+            </view>
+            <view class="col" style="padding:0">
+                <view class="otherName">王浩</view>
+                <text>今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好</text>
+                <view class="weui-grids">
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                </view>
+                <view>
+                    成都
+                </view>
+                <view class="nickTime">
+                    <view>40分钟前</view>
+                    <view class="ion-ios-compose-outline nickIcon"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

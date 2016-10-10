@@ -1,11 +1,11 @@
 {
   "pages": [   
-    
     "pages/wechat/wechat",
     "pages/note/note",
     "pages/find/find",
     "pages/mine/mine",
     "pages/message/message",
+    "pages/moments/moments",
     "pages/audio/audio",
     "pages/index/index",    
     "pages/logs/logs"

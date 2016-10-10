@@ -107,3 +107,6 @@
 .icon::before{
   font-size: 70rpx
 }
+.floatR{
+  float: right;
+}
