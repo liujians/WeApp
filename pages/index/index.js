@@ -23,5 +23,14 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  handleTap1:function(){
+    console.log("11111")
+  },
+  handleTap2:function(){
+    console.log("22222")
+  },
+  handleTap3:function(){
+    console.log("33333")
   }
 })

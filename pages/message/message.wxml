@@ -19,7 +19,7 @@
     <view class="weui-icon_success"></view>
 </scroll-view>
 <view class="row" style="height:10%;">
-    <text class="col-10 text-center icon ion-ios-mic"></text>
+    <text class="col-10 text-center icon ion-ios-mic" bindtap="getvoice"></text>
     <view class="col-67 padding_half">
         <input placeholder="请输入消息" />
     </view>
@@ -29,8 +29,8 @@
 <view id="elsePanel" animation="{{animation}}">
     <view class="weui-grids">
         <view class="weui-grid" bindtap="chooseImg"><view class="weui-grid__icon">图片</view></view>
-        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
-        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+        <view class="weui-grid" bindtap="getaddress"><view class="weui-grid__icon">位置</view></view>
+        <view class="weui-grid" bindtap="stopvoice"><view class="weui-grid__icon">test</view></view>
         <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
         <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
         <view class="weui-grid"><view class="weui-grid__icon">test</view></view>

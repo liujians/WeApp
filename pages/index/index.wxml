@@ -11,3 +11,12 @@
     <i class="ion-ios-chatbubble"></i>
   </view>
 </view>
+<!--<view id="outter" bindtap="handleTap1">
+  outer view
+  <view id="middle" catchlongtap="handleTap2">
+    middle view
+    <view id="inner" bindtap="handleTap3">
+      inner view
+    </view>
+  </view>
+</view>-->

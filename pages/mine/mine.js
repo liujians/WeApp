@@ -19,7 +19,8 @@ Page({
                 list_tool:[
                     {
                         img:"../../image/money.png",
-                        name:"钱包(现在是播放器)"
+                        name:"钱包(现在是播放器)",
+                        url:"../audio/audio"
                     },
                     {
                         img:"../../image/card.png",
@@ -35,7 +36,8 @@ Page({
                     },
                     {
                         img:"../../image/setting.png",
-                        name:"设置"
+                        name:"设置",
+                        url:"../info/info"
                     }
                 ]
             },
@@ -44,7 +46,7 @@ Page({
     goPage:function(event){
         console.log(event.currentTarget.dataset.log);
         wx.navigateTo({
-            url: '../audio/audio'
+            url: event.currentTarget.dataset.url
         })
     },
     onLoad: function () {

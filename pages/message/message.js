@@ -17,7 +17,6 @@ Page({
     _self.setData({
       title:options.name
     })
-    
     _self.setData({
         userInfo:app.globalData.userInfo
     })
@@ -66,9 +65,7 @@ Page({
       success: function (res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
         var tempFilePaths = res.tempFilePaths;
-        console.log(tempFilePaths)
         var t = _self.data.message;
-        console.log(t)
         t.push({
           img:_self.data.userInfo.avatarUrl,
           imgList:tempFilePaths,
@@ -79,5 +76,59 @@ Page({
         })
       }
     })
+  },
+  getaddress:function(){
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function(res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 28
+        })
+      }
+    })
+  },
+  getvoice:function(){
+    console.log("开始录音")
+    wx.startRecord({
+      // success: function(res) {
+      //   console.log("录音成功")
+      //   var tempFilePath = res.tempFilePath 
+      //   var t = _self.data.message;
+      //   t.push({
+      //     img:_self.data.userInfo.avatarUrl,
+      //     text:"语音消息",
+      //     me:true,
+      //     voice:tempFilePath
+      //   })
+      //   _self.setData({
+      //     message:t
+      //   })
+      //   wx.playVoice({
+      //     filePath: tempFilePath,
+      //     complete: function(){
+      //       console.log(播放完毕)
+      //     }
+      //   })
+      // },
+      success: function(res) {
+        console.log("录音成功")
+        var tempFilePath = res.tempFilePath 
+      },
+      complete:function(res){
+        console.log("complete"+res)
+      },
+      fail: function(res) {
+        //录音失败
+        console.log("fail"+res)
+      }
+    })
+  },
+  stopvoice:function(){
+    wx.stopRecord()
+    console.log("stop")
   }
 })

@@ -1,5 +1,6 @@
 {
   "pages": [   
+    
 
 
     "pages/wechat/wechat",
@@ -9,16 +10,17 @@
     "pages/message/message",
     "pages/audio/audio",
     "pages/moments/moments",
-    
-    "pages/index/index",    
+    "pages/info/info",    
+    "pages/index/index",        
     "pages/logs/logs"
   ],
   "window":{
     "navigationBarBackgroundColor": "#000",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "仿微信",
+    "navigationBarTitleText": "",
     "backgroundColor": "#eee",
-    "backgroundTextStyle": "dark"
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "backgroundColor":"#333",
