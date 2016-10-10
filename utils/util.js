@@ -48,6 +48,23 @@ function getUser(obj){
             }
         })
 }
+function getMoments(obj){
+    wx.request({
+            url: app.globalData.ip+'/getMoments.php',
+            data: {},
+            header: {
+                'Content-Type': 'application/json'
+            },
+            success: function(res) {
+                obj.setData({
+                  moments:res.data
+              })
+            },
+            fail:function(err){
+                console.log(err);
+            }
+        })
+}
 function formatNumber(n) {
   n = n.toString()
   return n[1] ? n : '0' + n
@@ -56,5 +73,6 @@ function formatNumber(n) {
 module.exports = {
   formatTime: formatTime,
   getMessage: getMessage,
-  getUser: getUser
+  getUser: getUser,
+  getMoments:getMoments
 }

@@ -5,30 +5,22 @@
             <image src="{{userInfo.avatarUrl}}"></image>
         </view>
     </view>
-    <view class="moments_content padding">
-        <view class="row borderBot">
+    <view class="moments_content">
+        <view class="row borderBot padding marginBot" wx:for="{{moments}}" wx:for-item="item">
             <view class="col-20">
-                <image class="otherAva" src="/image/adam.jpg"></image>
+                <image class="otherAva" src="{{item.avaImg}}"></image>
             </view>
             <view class="col" style="padding:0">
-                <view class="otherName">王浩</view>
-                <text>今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好今天心情很好</text>
-                <view class="weui-grids">
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
-                    <view class="weui-grid"><view class="weui-grid__icon">图片</view></view>
+                <view class="otherName">{{item.name}}</view>
+                <text wx:if="{{item.text}}">{{item.text}}</text>
+                <view class="weui-grids" wx:if="{{item.img}}">
+                    <view class="weui-grid" wx:for="{{item.img}}" wx:for-item="i" style="background:url('{{i.imgUrl}}') no-repeat;background-size:cover;"><view class="weui-grid__icon"></view></view>
                 </view>
-                <view>
-                    成都
+                <view wx:if="{{item.address}}">
+                    {{item.address}}
                 </view>
                 <view class="nickTime">
-                    <view>40分钟前</view>
+                    <view>{{item.time}}</view>
                     <view class="ion-ios-compose-outline nickIcon"></view>
                 </view>
             </view>

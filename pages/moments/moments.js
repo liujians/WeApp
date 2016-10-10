@@ -1,11 +1,14 @@
 var app = getApp()
+var getData = require('../../utils/util.js')
 Page({
   data:{
     // text:"这是一个页面"
+    moments:{}
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
     var _self = this;
+    getData.getMoments(_self);
     _self.setData({
         userInfo:app.globalData.userInfo
     })
