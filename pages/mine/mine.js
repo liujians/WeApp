@@ -24,7 +24,8 @@ Page({
                     },
                     {
                         img:"../../image/card.png",
-                        name:"卡包"
+                        name:"卡包（picker&switch）",
+                        url:"../picker/picker"
                     }
                 ]
             },
@@ -36,7 +37,7 @@ Page({
                     },
                     {
                         img:"../../image/setting.png",
-                        name:"设置",
+                        name:"设置（系统信息）",
                         url:"../info/info"
                     }
                 ]

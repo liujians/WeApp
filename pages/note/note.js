@@ -6,7 +6,8 @@ Page({
               list_tool:[
                 {
                     img:"../../image/newFriend.png",
-                    name:"新的朋友"
+                    name:"新的朋友",
+                    url:"../newfriend/newfriend"
                 },
                 {
                     img:"../../image/friends.png",
@@ -63,5 +64,11 @@ Page({
               ]
           }
       ]
+    },
+    goPage:function(e){
+        var url = e.currentTarget.dataset.url;
+        wx.navigateTo({
+            url: url
+        })
     }
 })

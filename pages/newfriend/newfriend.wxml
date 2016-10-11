@@ -1,0 +1,40 @@
+<scroll-view>
+    <view class="weui-search-bar weui-search-bar_focusing" id="search_bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <text class="weui-icon-search"></text>
+                <input type="text" class="weui-search-bar__input" id="search_input" placeholder="搜索" bindinput="inputFun" bindblur="inputclear" value="{{inputValue}}"/>
+                <text class="weui-icon-clear" id="search_clear"></text>
+            </view>
+            <view for="search_input" class="weui-search-bar__label" id="search_text">
+                <text class="weui-icon-search"></text>
+                <text>搜索</text>
+            </view>
+        </view>
+        <!--<text class="weui-search-bar__cancel-btn" id="search_cancel" bindtap="inputclear">取消</text>-->
+    </view>
+    <view class="weui-cells weui-cells_access search_show" hidden="{{type}}" id="search_show">
+        <view class="weui-cell" wx:for="{{textList}}" wx:for-item="i">
+            <view class="weui-cell__bd weui-cell_primary">
+                <text>{{i.text}}</text>
+            </view>
+        </view>
+        
+    </view>
+    <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage">  
+        <image src="{{i.img}}"></image>
+        <view class="item-text">
+           <view class="text_box">
+          <view class="flex">
+            <text class="title">{{i.name}}</text>
+          </view>
+          <view class="flex" style="color:#3ccccc">
+            <text class="message">{{i.message}}</text>
+          </view>
+         </view>
+          </view>
+        <view class="item-time padding_half" style="color:#3ccccc">
+          <text class="message">{{i.type?"已添加":"未添加"}}</text>
+        </view>
+  </view>
+</scroll-view>

@@ -1,8 +1,5 @@
 {
-  "pages": [   
-    
-
-
+  "pages": [  
     "pages/wechat/wechat",
     "pages/note/note",
     "pages/find/find",
@@ -10,7 +7,9 @@
     "pages/message/message",
     "pages/audio/audio",
     "pages/moments/moments",
-    "pages/info/info",    
+    "pages/info/info",  
+    "pages/newfriend/newfriend",
+    "pages/picker/picker",  
     "pages/index/index",        
     "pages/logs/logs"
   ],

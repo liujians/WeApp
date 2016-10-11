@@ -9,7 +9,7 @@
           <view class="marks" wx:if="{{i.count}}">
             <text>{{i.count}}</text>
           </view>
-          <image src="{{i.img}}" />
+          <image src="{{i.img}}"></image>
           <view class="item-text">
             <view class="text_box">
               <view class="flex">
