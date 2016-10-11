@@ -8,11 +8,12 @@ weApp for wechat
 <br/>
 整合了ionic的样式库和weui的样式库(ionic的样式库跟自带的播放器组件有点冲突)
 <br/>
-
+使用请查看使用必读
 
 目前功能
 
     查看消息
+	网络请求获取数据
     微信地图
     发送图片
     查看朋友圈
@@ -28,7 +29,9 @@ weApp for wechat
 <br/>
 为学习微信小程序而开发，转发请附地址
 > [https://github.com/liujians/WeApp](https://github.com/liujians/WeApp)
-###运行必读：
+
+
+###使用必读：
 - 10月08日之后的版本被我分离成了服务端和客户端2个demo
 - 如果想要继续留有之前静态demo的请备份
 <br/>
@@ -41,12 +44,13 @@ weApp for wechat
 <br/>
 ![image](https://github.com/liujians/WeApp/blob/master/ipconfig.png)
 
+###关于使用：
+> 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录 -> 启动示例服务器 -> 重启项目
+
 
 ###项目展示：
 ![image](https://github.com/liujians/WeApp/blob/master/GIF.gif)
 
-###关于使用：
-> 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录
 
 ###相关资源：
 - [weapp-ide&weapp-api](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1474632113_xQVCl&token=&lang=zh_CN) - 微信小应用官方IDE和官方文档
