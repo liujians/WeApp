@@ -53,6 +53,7 @@ weApp for wechat
 
 ###项目展示：
 ![image](./GIF.gif)
+![image](./GIF_2.gif)
 
 
 ###相关资源：

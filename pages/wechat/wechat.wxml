@@ -3,6 +3,12 @@
   <button>取消关注</button>
   <button>删除该聊天</button>
 </modal>
+<loading hidden="{{hidden}}">
+    加载中...
+</loading>
+<toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+    拿到数据
+</toast>
 <scroll-view scroll-y="true">
   <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" wx:for-index="index" data-index="{{index}}" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage">
       <!--<view catchlongtap="modalTap" style="width:100%;">-->

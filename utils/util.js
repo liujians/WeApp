@@ -32,6 +32,9 @@ function getMessage(id,obj){
         })
 }
 function getUser(obj){
+    obj.setData({
+            hidden: false
+        })
    wx.request({
             url: app.globalData.ip+'/getUser.php',
             data: {},
@@ -39,9 +42,15 @@ function getUser(obj){
                 'Content-Type': 'application/json'
             },
             success: function(res) {
-                obj.setData({
-                    list:res.data
-                })
+                setTimeout(function(){
+                    obj.setData({
+                        list:res.data,
+                        hidden: true,
+                        toast1Hidden:false
+                    })
+                    wx.stopPullDownRefresh()
+                },3000)
+                 
             },
             fail:function(err){
             console.log(err);

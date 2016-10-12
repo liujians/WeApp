@@ -1,10 +1,12 @@
 var app = getApp()
-var util = require('../../utils/util.js')
+var util = require('../../utils/util')
 app.getUserInfo();
 Page({
     data:{
       list:null,
-      modalHidden:true
+      modalHidden:true,
+      hidden:true,
+      toast1Hidden:true
     },
     onReady:function(){
         util.getUser(this);
@@ -34,10 +36,14 @@ Page({
         })
         // console.log(test);
     },
+    toast1Change:function(){
+        this.setData({
+            toast1Hidden: true
+        })
+    },
     onPullDownRefresh:function(){
-        console.log("启动下拉")
-        setTimeout(function(){
-            wx.stopPullDownRefresh()
-        },3000)
+        
+        util.getUser(this);
+        
     }
 })
