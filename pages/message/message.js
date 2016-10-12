@@ -8,7 +8,8 @@ Page({
     message:[],
     animation:{},
     animation_2:{},
-    tap:"tapOff"
+    tap:"tapOff",
+    
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -77,19 +78,52 @@ Page({
       }
     })
   },
-  getaddress:function(){
+  // getaddress:function(){
+  //   wx.getLocation({
+  //     type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+  //     success: function(res) {
+  //       var latitude = res.latitude
+  //       var longitude = res.longitude
+  //       wx.openLocation({
+  //         latitude: latitude,
+  //         longitude: longitude,
+  //         scale: 28
+  //       })
+  //     }
+  //   })
+  // },
+  getlocat:function(){
+    var _self = this
     wx.getLocation({
       type: 'gcj02', //返回可以用于wx.openLocation的经纬度
       success: function(res) {
-        var latitude = res.latitude
-        var longitude = res.longitude
-        wx.openLocation({
-          latitude: latitude,
-          longitude: longitude,
-          scale: 28
+        _self.setData({
+          latitude: res.latitude,
+          longitude: res.longitude,
+          markers: [{
+            latitude: res.latitude,
+            longitude: res.longitude,
+            name: '时代一号',
+            desc: '现在的位置'
+          }],
+          covers: [{
+            latitude: res.latitude,
+            longitude: res.longitude,
+            iconPath: '/images/green_tri.png',
+            rotate: 10
+          }]
         })
-      }
-    })
+        var t = _self.data.message;
+          t.push({
+            img:_self.data.userInfo.avatarUrl,
+            me:true,
+            map:true
+          })
+          _self.setData({
+            message:t
+          })
+    }})
+      
   },
   getvoice:function(){
     console.log("开始录音")
