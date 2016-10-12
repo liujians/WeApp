@@ -1,4 +1,4 @@
-<!--<view class="section">
+<view class="section">
   <view class="section__title">地区选择器</view>
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
@@ -22,9 +22,13 @@
       当前选择: {{date}}
     </view>
   </picker>
-</view>-->
-
-<view>
+</view>
+<view class="section__title">switch示例</view>
+  <view class="body-view">
+    <switch checked bindchange="switch1Change"/>
+    <switch bindchange="switch2Change"/>
+  </view>
+<!--<view>
   <view>注意：开发工具暂时只支持mode = selector。</view>
     <view class="section">
     <view class="section__title">地区选择器</view>
@@ -34,9 +38,5 @@
       </view>
     </picker>
   </view>
-  <view class="section__title">switch示例</view>
-  <view class="body-view">
-    <switch checked bindchange="switch1Change"/>
-    <switch bindchange="switch2Change"/>
-  </view>
-</view>
+  
+</view>-->

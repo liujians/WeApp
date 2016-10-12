@@ -35,6 +35,7 @@ Page({
         // console.log(test);
     },
     onPullDownRefresh:function(){
+        console.log("启动下拉")
         setTimeout(function(){
             wx.stopPullDownRefresh()
         },3000)

@@ -20,6 +20,8 @@ weApp for wechat
     查看系统信息
     新的朋友
 	实时文本搜索框
+	IDE更新的下拉
+	picker三种MODE
 
 <br/>
 目前每天更新中...
