@@ -42,14 +42,14 @@ weApp for wechat
 
 跑起服务器之后，在app.js中设置自己的Ip地址
 <br/>
-![image](https://github.com/liujians/WeApp/blob/master/ipconfig.png)
+![image](./ipconfig.png)
 
 ###关于使用：
 > 克隆本项目 -> 在微信开发工具中添加项目 -> 选择项目目录 -> 启动示例服务器 -> 重启项目
 
 
 ###项目展示：
-![image](https://github.com/liujians/WeApp/blob/master/GIF.gif)
+![image](./GIF.gif)
 
 
 ###相关资源：
