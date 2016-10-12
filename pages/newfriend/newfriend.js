@@ -1,6 +1,7 @@
 Page({
   data:{
     // text:"这是一个页面"
+    inputValue: "",
     list:[
         {
             img:"/image/adam.jpg",
@@ -50,7 +51,7 @@ Page({
       }
     ],
     type:true,
-    inputValue: ''
+    focusing:false
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -78,6 +79,9 @@ Page({
   inputFun:function(e){
       var _self = this;
       console.log(e);
+      this.setData({
+        inputValue:e.detail.value
+      })
       if(e.detail.cursor){
         _self.setData({
             type:false
@@ -88,14 +92,25 @@ Page({
         })
       }
   },
+  inputFocus(){
+    var _self = this;
+    _self.setData({
+            focusing:true
+        })
+  },
+  inputBlur(e){
+    var _self = this;
+    if(e.detail.cursor==0){
+      _self.inputclear()
+    }
+  },
   inputclear:function(e){
-    //   e.detail={
-    //       cursor:0,
-    //       value:""
-    //   }
-    //   var _self = this;
-    //   _self.setData({
-    //       inputValue: ''
-    //   })
+      var _self = this;
+      _self.setData({
+          focusing:false,
+          inputValue: '',
+          type:true,
+      })
+      console.log("input的值为"+_self.data.inputValue)
   }
 })
