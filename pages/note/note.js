@@ -11,7 +11,8 @@ Page({
                 },
                 {
                     img:"../../image/friends.png",
-                    name:"群聊"
+                    name:"群聊(websocket的Demo)",
+                    url:"../ws/ws"
                 },
                 {
                     img:"../../image/label.png",
