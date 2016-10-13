@@ -15,7 +15,7 @@ weApp for wechat
 目前功能
 
     查看消息
-	网络请求获取数据
+	网络请求获取数据（download示例server端demo）
     微信地图（调用API已换成map组件）
     发送图片
     查看朋友圈
@@ -25,7 +25,7 @@ weApp for wechat
 	2种播放器组件
 	查看系统信息
 	picker三种MODE
-	upload与download接口的调用
+	upload与download接口的调用（示例server端demo一起更新）
 
 <br/>
 目前每天更新中...
@@ -45,7 +45,7 @@ weApp for wechat
 - server 部分为单独一个项目，装载着此项目需要的数据，需要下载跑起来才能运行此项目
 <br/>
 - 项目链接：
-> [https://github.com/liujians/WeApp-server](https://github.com/liujians/WeApp-server)
+> [请点击这里下载示例server的demo](https://github.com/liujians/WeApp-server)
 
 跑起服务器之后，在app.js中设置自己的Ip地址
 <br/>
