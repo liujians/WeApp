@@ -26,6 +26,7 @@ weApp for wechat
 	查看系统信息
 	picker三种MODE
 	upload与download接口的调用（示例server端demo一起更新）
+	加入websocket示例，**需要重新install安装依赖**
 
 <br/>
 目前每天更新中...
@@ -56,6 +57,7 @@ weApp for wechat
 
 
 ###项目展示：
+![image](./GIF_3.gif)
 ![image](./GIF.gif)
 ![image](./GIF_2.gif)
 
