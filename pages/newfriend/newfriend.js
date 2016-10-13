@@ -96,7 +96,7 @@ Page({
     var _self = this;
     _self.setData({
             focusing:true
-        })
+    })
   },
   inputBlur(e){
     var _self = this;

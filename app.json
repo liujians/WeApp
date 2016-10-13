@@ -9,7 +9,8 @@
     "pages/moments/moments",
     "pages/info/info",  
     "pages/newfriend/newfriend",
-    "pages/picker/picker",  
+    "pages/picker/picker", 
+    "pages/upload/upload",     
     "pages/index/index",        
     "pages/logs/logs"
   ],

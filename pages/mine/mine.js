@@ -11,7 +11,8 @@ Page({
                     },
                     {
                         img:"../../image/sc_2.png",
-                        name:"收藏"
+                        name:"收藏(现在是上传和下载)",
+                        url:"../upload/upload"
                     }
                 ]
             },

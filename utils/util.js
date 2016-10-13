@@ -46,14 +46,24 @@ function getUser(obj){
                     obj.setData({
                         list:res.data,
                         hidden: true,
-                        toast1Hidden:false
+                        toast1Hidden:false,
+                        toastText:"拿到数据"
                     })
                     wx.stopPullDownRefresh()
                 },3000)
                  
             },
             fail:function(err){
-            console.log(err);
+                setTimeout(function(){
+                    obj.setData({
+                        list:res.data,
+                        hidden: true,
+                        toast1Hidden:false,
+                        toastText:"请检查server"
+                    })
+                    wx.stopPullDownRefresh()
+                },3000)
+                console.log(err);
             }
         })
 }

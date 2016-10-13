@@ -7,9 +7,13 @@
     加载中...
 </loading>
 <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
-    拿到数据
+    {{toastText}}
 </toast>
 <scroll-view scroll-y="true">
+  <view wx:if="{{!list}}">
+    请检查服务器，设置IP地址为无线下IP
+    <view>下载本小程序server例子获取数据https://github.com/liujians/weApp-server</view>
+  </view>
   <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" wx:for-index="index" data-index="{{index}}" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage">
       <!--<view catchlongtap="modalTap" style="width:100%;">-->
           <view class="marks" wx:if="{{i.count}}">
