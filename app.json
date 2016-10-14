@@ -6,9 +6,9 @@
     "pages/mine/mine",
     "pages/message/message",
     "pages/audio/audio",
-    "pages/moments/moments",
     "pages/info/info",  
     "pages/newfriend/newfriend",
+    "pages/moments/moments",        
     "pages/picker/picker", 
     "pages/upload/upload",
     "pages/ws/ws",     
@@ -20,7 +20,6 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "",
     "backgroundColor": "#eee",
-    "enablePullDownRefresh":true,    
     "backgroundTextStyle": "dark"
   },
   "tabBar": {

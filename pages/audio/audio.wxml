@@ -1,6 +1,6 @@
 <scroll-view scroll-y="true">
     <view class="padding">
-        <text>播放器示例(样式被ionic干扰，可以注释掉引入的ionic再刷新)</text>
+        <text>播放器示例</text>
     </view>
     <view>
         <audio class="flex-center" src="{{src}}" poster="{{poster}}" name="{{name}}" author="{{author}}" action="{{audioAction}}" controls></audio>
