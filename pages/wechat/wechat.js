@@ -1,5 +1,6 @@
 var app = getApp()
 var util = require('../../utils/util')
+// console.log(JSON)
 app.getUserInfo();
 Page({
     data:{
