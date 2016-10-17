@@ -33,9 +33,6 @@ Page({
               url: app.globalData.ip+'/upload.php',
               filePath: tempFilePaths[0],
               name: 'test',
-              // formData:{
-              //     'type': 'image'
-              // },
               success(data){
                 console.log(data);
               }

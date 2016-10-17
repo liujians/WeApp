@@ -78,7 +78,6 @@ Page({
   },
   inputFun:function(e){
       var _self = this;
-      console.log(e);
       this.setData({
         inputValue:e.detail.value
       })

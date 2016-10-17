@@ -12,29 +12,6 @@ function formatTime(date) {
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 function getMessage(id,obj){
-    // fetch(app.globalData.ip+'/getMsg.php',{
-    //     method:"post",
-    //     body:"id="+id
-    // })  
-    // .then(  
-    //     function(response) {  
-    //         console.log(response)
-    //         if (response.status !== 200) {  
-    //             console.log('Looks like there was a problem. Status Code: ' +  
-    //             response.status);  
-    //             return;  
-    //         }
-    //         // Examine the text in the response  
-    //         response.json().then(function(data) {  
-    //             obj.setData({
-    //               message:data
-    //           })
-    //         });  
-    //     }  
-    // )  
-    // .catch(function(err) {  
-    //     console.log('Fetch Error :-S', err);  
-    // });
     wx.request({
             url: app.globalData.ip+'/getMsg.php',
             data: {
@@ -42,15 +19,16 @@ function getMessage(id,obj){
             },
             method: "POST",
             header: {
-                // 'Content-Type': 'application/json'
+                'x-my-custom-header':'some value'
             },
             success: function(res) {
+                console.log(res)
                 obj.setData({
                   message:res.data
               })
             },
             fail:function(err){
-            console.log(err);
+                console.log(err);
             }
         })
 }
@@ -62,7 +40,7 @@ function getUser(obj){
     .then(  
         function(response) {  
             if (response.status !== 200) {  
-                console.log('Looks like there was a problem. Status Code: ' +  
+                console.log('错误码: ' +  
                 response.status);  
                 return;  
             }
@@ -81,11 +59,12 @@ function getUser(obj){
         }  
     )  
     .catch(function(err) {  
+        obj.setData({
+            hidden: true
+        })
         console.log('Fetch Error :-S', err);  
     });
-//     obj.setData({
-//             hidden: false
-//         })
+
 //    wx.request({
         //     url: app.globalData.ip+'/getUser.php',
         //     data: {},
