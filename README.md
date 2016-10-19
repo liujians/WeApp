@@ -28,8 +28,10 @@ weApp for wechat
 	upload与download接口的调用（示例server端demo一起更新）
 	加入websocket示例，**需要重新install安装依赖**
 
-<br/>
-目前每天更新中...
+
+
+等待官方加入新内容
+
 <br/>
 欢迎一起学习交流
 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=9bcf9f7be59b471456c1feec466dab4d54da7ab35c834b8e821ec17177fb33b3"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="前端群居所" title="前端群居所"></a>
@@ -63,6 +65,6 @@ weApp for wechat
 
 
 ###相关资源：
-- [weapp-ide&weapp-api](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1474632113_xQVCl&token=&lang=zh_CN) - 微信小应用官方IDE和官方文档
+- [weapp-ide&weapp-api](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1476197490095) - 微信小应用官方IDE和官方文档
 - [WeApp-server](https://github.com/liujians/WeApp-server) - 项目的server示例服务器
 
