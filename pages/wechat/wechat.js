@@ -23,6 +23,7 @@ Page({
         })
     },
     goPage:function(e){
+        console.log(e)
         var _self = this;
         var newlist = _self.data.list
         var index = e.currentTarget.dataset.index
