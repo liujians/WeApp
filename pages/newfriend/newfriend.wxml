@@ -14,7 +14,7 @@
         <text class="weui-search-bar__cancel-btn" id="search_cancel" bindtap="inputclear">取消</text>
     </view>-->
     
-    <view class="weui-search-bar {{ focusing ? 'weui-search-bar_focusing' : '' }}">
+    <!--<view class="weui-search-bar {{ focusing ? 'weui-search-bar_focusing' : '' }}">
         <form class="weui-search-bar__form">
         <view class="weui-search-bar__box">
             <text class="weui-icon-search" />
@@ -26,7 +26,7 @@
             bindinput="inputFun"
             bindblur="inputBlur"
             />
-            <!--<text class="weui-icon-clear" bindtap="inputclear" wx:if="{{ inputValue.length > 0 }}"></text>-->
+            <text class="weui-icon-clear" bindtap="inputclear" wx:if="{{ inputValue.length > 0 }}"></text>
             <icon style="position: absolute;top: 0;right: 0;padding:6px 6px" type="cancel" size="16" bindtap="inputclear" wx:if="{{ inputValue.length > 0 }}"/>
         </view>
         <label class="weui-search-bar__label"
@@ -45,7 +45,7 @@
             </view>
         </view>
         
-    </view>
+    </view>-->
     <view class="item-avatar-md" wx:for="{{list}}" wx:for-item="i" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="goPage">  
         <image src="{{i.img}}"></image>
         <view class="item-text">
