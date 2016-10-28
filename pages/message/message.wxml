@@ -26,22 +26,25 @@
     </view>
     <view class="weui-icon_success"></view>
 </scroll-view>
-<view class="row" style="height:10%;">
-    <text class="col-10 text-center icon ion-ios-mic" bindtap="getvoice"></text>
-    <view class="col-67 padding_half">
+<view class="wa-row" style="height:10%;">
+    <view class="wa-col-10 text-center icon ion-ios-mic" style="line-height:30px" bindtap="getvoice">麦</view>
+    <view class="wa-col-66 padding_half">
         <input placeholder="请输入消息" />
     </view>
-    <view class="col-10 text-center icon ion-happy-outline"></view>
-    <view class="col-10 text-center icon ion-ios-plus-outline" bindtap="elseBtn"></view>
+    <view class="wa-col-10 text-center icon ion-happy-outline" style="line-height:30px">表</view>
+    <view class="wa-col-10 text-center icon ion-ios-plus-outline text-center" style="line-height:30px" bindtap="elseBtn">+</view>
 </view>
 <view id="elsePanel" animation="{{animation}}">
-    <view class="weui-grids">
-        <view class="weui-grid" bindtap="chooseImg"><view class="weui-grid__icon">图片</view></view>
-        <view class="weui-grid" bindtap="getlocat"><view class="weui-grid__icon">位置</view></view>
-        <view class="weui-grid" bindtap="stopvoice"><view class="weui-grid__icon">test</view></view>
-        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
-        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
-        <view class="weui-grid"><view class="weui-grid__icon">test</view></view>
+    <view class="wa-row">
+        <view class="wa-col-33" bindtap="chooseImg"><view class="text-center" style="line-height:50px">图片</view></view>
+        <view class="wa-col-33" bindtap="getlocat"><view class="text-center" style="line-height:50px">位置</view></view>
+        <view class="wa-col-33" bindtap="stopvoice"><view class="text-center" style="line-height:50px">test</view></view>
+        
+    </view>
+    <view class="wa-row">
+        <view class="wa-col-33"><view class="text-center" style="line-height:50px">test</view></view>
+        <view class="wa-col-33"><view class="text-center" style="line-height:50px">test</view></view>
+        <view class="wa-col-33"><view class="text-center" style="line-height:50px">test</view></view>
     </view>
 </view>
     <!--<map
