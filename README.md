@@ -1,5 +1,5 @@
 # WeApp - wechat
-weApp for wechat
+weApp for wechat by liujians [http://liujians.me](http://liujians.me)
 <hr/>
 
 
