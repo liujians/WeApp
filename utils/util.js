@@ -44,8 +44,10 @@ function getUser(obj){
                 response.status);  
                 return;  
             }
+            console.log(response)
             // Examine the text in the response  
             response.json().then(function(data) {  
+                console.log(data);
                 setTimeout(function(){
                     obj.setData({
                         list:data,
