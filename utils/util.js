@@ -88,7 +88,6 @@ function getUser(obj){
             fail:function(err){
                 setTimeout(function(){
                     obj.setData({
-                        list:res.data,
                         hidden: true,
                         toast1Hidden:false,
                         toastText:"请检查server"
